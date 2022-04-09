@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>云台山</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Transit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="shortcut icon" href="images/图标.ico">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <script src="js/jquery-1.11.1.min.js">
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <!-- container -->
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">云台山</a>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <a href="#" class="facebook"> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook twitter"> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook chrome"> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook dribbble"> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="top-nav">
+                <span class="menu">菜单</span>
+                <ul class="nav1">
+                    <li><a href="index.html" class="active">云台山简介</a></li>
+                    <li><a href="history.html">文化历史</a></li>
+                    <li><a href="accomdation.html">关于旅店</a></li>
+                    <li><a href="food.html">云台山美食</a></li>
+                    <li><a href="#news" class="scroll">景区公告</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function() {
+                        $("ul.nav1").slideToggle(300, function() {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- /script-for-menu -->
+            </div>
+        </div>
+        <!-- //container -->
+        <div class="banner-text">
+            <!-- container -->
+            <div class="container">
+                <ul>
+                    <li>云台山位于河南省焦作市境内是一处以以峡谷类地质地貌和历史为内涵的景区</li>
+                </ul>
+            </div>
+            <!-- //container -->
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- banner-bottom -->
+    <div class="banner-top-slide">
+        <div class="banner-bottom-top">
+            <h4>今日天气：
+            </h4>
+            <p>宜出行，宜户外运动，适宜衬衫，不宜洗车，不用带伞</p>
+        </div>
+        <div class="banner-bottom-bottom">
+            <div class="banner-top-slide-grids">
+                <script src="js/responsiveslides.min.js"></script>
+                <script>
+                    $(function() {
+                        // Slideshow 4
+                        $("#slider3").responsiveSlides({
+                            auto: true,
+                            pager: true,
+                            nav: false,
+                            speed: 500,
+                            namespace: "callbacks",
+                            before: function() {
+                                $('.events').append("<li>before event fired.</li>");
+                            },
+                            after: function() {
+                                $('.events').append("<li>after event fired.</li>");
+                            }
+                        });
+
+                    });
+                </script>
+                <div id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider3">
+                        <li>
+                            <div class="banner-slid">
+                                <h3>同舟共济</h3>
+                                <p>居家隔离，减少外出，就是最好的防护;</br>
+                                    听从号召尽量待在家中，不串门不聚会;</br>正确佩戴口罩，做好防护，养成良好卫生习惯。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-slid">
+                                <h3>坚定信心</h3>
+                                <p>科学宣传疫情防护知识，提高公众自我保护意识;</br>
+                                    加强防控，一起加油。众志成城，抗击疫情;</br>
+                                    疫情就是命令，防控就是责任。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sliderbar = document.querySelector('.banner-top-slide');
+        var banner = document.querySelector('.banner-top-slide');
+        // banner.offestTop 就是被卷去头部的大小 一定要写到滚动的外面
+        var bannerTop = banner.offsetTop;
+        // 当我们侧边栏固定定位之后应该变化的数值
+        var sliderbarTop = sliderbar.offsetTop - bannerTop;
+        document.addEventListener('scroll', function() {
+            if (window.pageYOffset >= bannerTop) {
+                banner.style.position = 'fixed';
+                sliderbar.style.top = sliderbarTop + 'px';
+            } else {
+                banner.style.position = 'absolute';
+                sliderbar.style.top = 220 + 'px';
+            }
+        })
+    </script>
+    <!-- //banner-bottom -->
+    <!-- welcome -->
+    <div class="welcome">
+        <!-- container -->
+        <div class="container">
+            <div class="welcome-info">
+                <h3>Hello there!</h3>
+                <h5>新的一年，打卡云台山的正确姿势</h5>
+                <h4>你要不要跟我走？&nbsp;&nbsp;<a href="follow-me.html">嗯，点这里>></a></h4>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //welcome -->
+    <div class="copyrights">Collect from </div>
+    <!-- banner-bottom -->
+    <div class="banner-bottom">
+        <!-- container -->
+        <div class="container">
+            <div class="banner-bottom-info">
+                <h3>云台山过年习俗</h3>
+                <p>河南的春节，各种民俗活动异彩纷呈，闹秧歌，庙会，打醮，说书等百花齐放，可谓是热闹非凡<a href="handie.html">更多>></a></p>
+            </div>
+            <div class="banner-bottom-grids">
+                <div class="col-md-6 banner-bottom-grid">
+                    <div class="col-md-5 banner-bottom-left">
+                        <img src="images/xs1.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 banner-bottom-right">
+                        <h4>秧歌朝拜佛祖</h4>
+                        <p>打醮本是道士设坛为人做法事，求福禳灾的一种法事活动。一般是在冬天农事告一段落的时候，农民们为了感谢神灵带来一年的收获，祈求上苍赐福庇佑来年风调雨顺、五谷丰登，消灾免难，吉祥安康，而举行各种祭祀活动，而打醮便是其中的一项重要的活动。</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-6 banner-bottom-grid">
+                    <div class="col-md-5 banner-bottom-left">
+                        <img src="images/xs2.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 banner-bottom-right">
+                        <h4>转幡</h4>
+                        <p>在众多的祭祀活动中，转幡也是一项规模比较大的佛事活动。转幡也称祭幡，就是凡来参加祭事活动的村民都要手执法器、排例成行、跟随佛教居士在空阔平整的地上围绕着栽在地上的绑着一把朝向天空的高高在上的扫帚旋转，绑着的扫帚谓之“扫天晴”。</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- container -->
+    </div>
+    <!-- //banner-bottom -->
+    <!-- news -->
+    <div id="news" class="news">
+        <div class="container">
+            <div class="news-text">
+                <h3>云台山景区</h3>
+                <p>因外界各种原因给您带来的麻烦，我们在此感到深深的抱歉，感谢您的谅解，祝您游玩愉快！</p>
+            </div>
+            <div class="news-grids">
+                <div class="col-md-3 news-grid">
+                    <h4>红石峡</h4>
+                    <span>2020.02.07</span>
+                    <img src="images/ticket1.jpg" alt="">
+                    <div class="news-info">
+                        <p>红石峡（又名温盘峪），位于子房湖南，全长2000米，峡谷深藏于地下68米 [7] 。由红岩构成，属中国丹霞地貌峡谷景观，崖壁呈赤红色，故称“红石峡”。红石峡里分布有“白龙潭”、“黄龙潭”、“青龙潭”、“黑龙潭”、“卧龙潭”、“眠龙潭”、“醒龙潭”、“子龙潭”、“游龙潭”，构成“九龙溪”。还有“幽瀑”、“穿石洞”、“相吻石”、“双狮汲水”、“孔雀开屏”、“棋盘山”等景观。红石峡南端有一狭窄的峡谷称为“一线天”，有瀑高50余米的白龙瀑布。</p>
+                    </div>
+                </div>
+                <div class="col-md-3 news-grid">
+                    <h4>潭瀑峡</h4>
+                    <span>2020.02.07</span>
+                    <img src="images/ticket2.jpg" alt="">
+                    <div class="news-info">
+                        <p>潭瀑峡（又名小寨沟），处于云台山北部略偏西，是子房河的一个源头。潭瀑峡长2000米，南北走向。潭瀑峡内一条溪水叫小龙溪。主要景点有渡仙潭、情人瀑、金龙卧波、丫字瀑、清漪池、水帘洞、碧玉潭、试剑石、蝴蝶岩、龙凤壁等，呈现出飞瀑、走泉、彩潭和山石景观。因潭瀑峡“三步一泉、五步一瀑、十步一潭”，故称“潭瀑峡” 。</p>
+                    </div>
+                </div>
+                <div class="col-md-3 news-grid">
+                    <h4>泉瀑峡</h4>
+                    <span>2020.02.07</span>
+                    <img src="images/ticket3.jpg" alt="">
+                    <div class="news-info">
+                        <p>泉瀑峡（又名老潭沟），全长约3000米，沿沟上行400米，是亚洲最高大瀑布——云台天瀑，落差达314米。云台天瀑最宽可有十多米宽的瀑面。是云台山风景区的标志性景观之一。</p>
+                    </div>
+                </div>
+                <div class="col-md-3 news-grid">
+                    <h4>茱萸峰</h4>
+                    <span>2020.02.07</span>
+                    <img src="images/ticket4.jpg" alt="">
+                    <div class="news-info">
+                        <p>茱萸峰，俗名小北顶，又名覆釜山，因其形貌似一只倒扣的大锅由而得名。海拔1297.6米，峰顶有真武大帝庙、天桥、云梯。唐代诗人王维《九月九日忆山东兄弟》：“独在异乡为异客，每逢佳节倍思亲，遥知兄弟登高处，遍插茱萸少一人。”即于此峰有感而作。峰腰有药王洞，深30米，直径10米，相传是唐代药王孙思邈采药炼丹的地方，药王洞口有古红豆杉一株，高约20米，树干粗达3人合抱，枝繁叶茂，树龄在千年左右。另有“厨灶洞”、“阎王洞”、“黄泥洞”等10余个洞穴。2015年9月20日，玻璃栈道正式对游客开放。</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //news -->
+    <!-- footer -->
+    <div class="footer">
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-6 footer-left">
+                <h3>联系我们</h3>
+                <form>
+                    <input type="text" placeholder="电子邮件,例如1435469178@qq.com" required="">
+                    <input type="submit" value="提交">
+                </form>
+            </div>
+            <div class="col-md-3 footer-middle">
+                <h3>地址</h3>
+                <div class="address">
+                    <p>黑塞哥维纳-涅雷特瓦
+                        <span>阿布扎比</span>
+                    </p>
+                </div>
+                <div class="phone">
+                    <p>123321234567</p>
+                </div>
+            </div>
+            <div class="col-md-3 footer-right">
+                <div class="f-logo">
+                    <a href="index.html">云台山</a>
+                </div>
+                <p>黑塞哥维纳-涅雷特瓦，阿布扎比</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- //container -->
+        <div class="mod_copyright">
+            <div class="links">关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机 | 友情链接 | 销售联盟 | 社区 | 公益 | English Site | Contact U</div>
+            <p>地址：阿拉伯联合酋长国 阿布扎比 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br> 京ICP备08001421号京公网安备110108007702
+            </p>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copyright">
+        <!-- container -->
+        <div class="container">
+            <div class="copyright-left">
+
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+
+    <!-- copyright -->
+</body>
+
+</html>
